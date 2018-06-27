@@ -1,0 +1,104 @@
+.container
+	section.breadcrumb-banner.clearfix
+		.img 
+			img(src="img/breadcrumb/1.jpg", alt="")
+		h3.pagename
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Liên hệ
+				meta(itemprop='position', content='2')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Thông tin liên hệ
+				meta(itemprop='position', content='3')
+			//- li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') American Tourister Handy Spinner 78cm TSA
+				meta(itemprop='position', content='4')
+	//- section.contact-map#map.clearfix
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4240830274184!2d106.70087716538356!3d10.778795642319912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f47d6e2bbb5%3A0x3ac4570b9f850ad9!2sVincom+Center!5e0!3m2!1sen!2s!4v1502175557681" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+	section.contact-page.clearfix
+		h2.page-title.text-xs-left.hidden Liên hệ
+		nav.top-nav.clearfix
+			ul 
+				li 
+					a(href="hethong.html") Hệ thống cửa hàng
+				li.active
+					a(href="lienhe.html") Thông tin liên hệ
+		.row.flex.flex-wrap
+			.col-xs-12.col-md-5.col-lg-4
+				.contact-info
+					h1.company SkyWatch.vn
+					ul 
+						li <i class="fa fa-map-marker" aria-hidden="true"></i> 
+							span 830/11A2 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM
+						li <i class="fa fa-phone" aria-hidden="true"></i>
+							a(href="tel:083 9797 369") 083 9797 369
+						li <i class="fa fa-phone" aria-hidden="true"></i>
+							a(href="tel:1900 636 797") 1900 636 797
+					//- h2.title Đăng ký làm đại lý
+					//- ul 
+						li <i class="fa fa-map-marker" aria-hidden="true"></i> 
+							span Vincom B, 70 - 72 Lê Thánh Tôn, P. Bến Nghé, Q.1, TP. HCM
+						li <i class="fa fa-phone" aria-hidden="true"></i>
+							a(href="tel:(+84) (61) 8860561") (+84) (61) 8860561
+						li <i class="fa fa-fax" aria-hidden="true"></i>
+							span (+84) (61) 8860573
+					//- h2.title Trung tâm bảo hành
+					//- ul 
+						li <i class="fa fa-map-marker" aria-hidden="true"></i> 
+							span Vincom B, 70 - 72 Lê Thánh Tôn, P. Bến Nghé, Q.1, TP. HCM
+						li <i class="fa fa-phone" aria-hidden="true"></i>
+							a(href="tel:(+84) (61) 8860561") (+84) (61) 8860561
+						li <i class="fa fa-fax" aria-hidden="true"></i>
+							span (+84) (61) 8860573
+					//- h2.title Hỗ trợ khách hàng
+					//- ul 
+						//- li <i class="fa fa-map-marker" aria-hidden="true"></i> 
+							span Vincom B, 70 - 72 Lê Thánh Tôn, P. Bến Nghé, Q.1, TP. HCM
+						li <i class="fa fa-phone" aria-hidden="true"></i>
+							a(href="tel:(+84) (61) 8860561") (+84) (61) 8860561
+						li <i class="fa fa-fax" aria-hidden="true"></i>
+							span (+84) (61) 8860573
+						//- li <i aria-hidden="true" class="fa fa-envelope"></i>
+						//- 	a(href="mailto:info@rioland.vn") info@rioland.vn
+				//- .working-time
+					.title Thời gian làm việc
+					.time <i class="fa fa-clock-o" aria-hidden="true"></i> 8:30 - 18:00 
+						span (Hàng ngày, cả Thứ Bảy & CN)
+			.col-xs-12.col-md-7.col-lg-8
+				section.contact-map#map.clearfix
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4240830274184!2d106.70087716538356!3d10.778795642319912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f47d6e2bbb5%3A0x3ac4570b9f850ad9!2sVincom+Center!5e0!3m2!1sen!2s!4v1502175557681" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				section.contact-form.clearfix
+					//- .module-title Cảm ơn quý khách đã quan tâm đến sản phẩm & dịch vụ của Rioland. Hãy liên hệ với chúng tôi để nhận được tư vấn tốt nhất.
+					.form-wrap.clearfix
+						.form-group.col2
+							input(type="text", placeholder="Họ và tên*:")
+						//- .form-group.col2
+							select(name="")
+								option(value="") Gửi đến*:
+						.form-group.col2
+							input(type="text", placeholder="Email*:")
+						//- .form-group.col2
+							select(name="")
+								option(value="") Phòng ban*:
+						.form-group.col2
+							input(type="text", placeholder="Điện thoại*:")
+						.form-group.col2
+							input(type="text", placeholder="Tiêu đề*:")
+						.form-group
+							textarea(name="", cols="30", rows="4", placeholder="Nội dung:")
+						//- .form-group
+							label.fileinput(for="#") Tập tin đính kèm: (Không quá 10mb)
+							input(type="file", name="")
+							//- input(type="file", name="")
+							//- input(type="file", name="")
+							.des Hỗ trợ đính kèm các tập tin định dạng: Word, Excel, Acrobat, Zip, Rar
+						//- .captcha Chèn khung CAPTCHA vô đây
+						.btnwrap
+							input(type="submit", value="Gửi")

@@ -1,0 +1,149 @@
+
+.brand-list
+	// border-top: 1px solid darken($white,10%)
+	// border-left: 1px solid darken($white,10%)
+	.row
+		// margin: 0px 0px
+	.col-6, .col-12
+		margin-bottom: 20px
+		// padding: 0px 0px
+	.col-custom
+		+media-breakpoint-up(xl)
+			// +flex(0 0 20%)
+	.brand-col
+		display: block
+		figure
+			.brand-img
+				display: block
+				+pos(rel,null)
+				overflow: hidden
+				&:before, &:after
+					content: ''
+					width: 100%
+					height: 100%
+					background: color-rgba($black,0.3)
+					+pos(abs, 0 null null 0)
+					z-index: 1
+					+transition(all,0.5s)
+				&:before
+					+transform(translate(-100%,100%))
+				&:after
+					+transform(translate(100%,-100%))
+				img
+					filter: brightness(50%)
+					+transition(all,0.5s)
+				.brand-logo
+					+pos(abs, 0 null 0 0)
+					right: 0
+					+flexbox
+					flex-wrap: wrap
+					justify-content: center
+					align-items: center
+					align-content: center
+					opacity: 1
+					z-index: 5
+					+transition(all,0.5s)
+					img
+						max-width: 60%
+						max-height: 60%
+						filter: invert(100%) grayscale(100%) brightness(200%)
+						+transition(all,0.5s)
+			figcaption
+				+transition(all,0.5s)
+				+pos(rel,null)
+			.brand-name
+				+fs(18rem)
+				font-weight: 600
+				color: $black
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				height: 60px
+				border: 1px solid darken($white,20%)
+				border-top: none
+				+pos(abs, null 0 0 0)
+				+transition(all,0.5s)
+				visibility: hidden
+				opacity: 0
+				z-index: 20
+				background: $white
+				img
+					max-height: 60%
+					max-width: 60%
+			.brand-des
+				+fs(14rem)
+				+pos(abs, 0 null 0 0)
+				right: 0
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				color: $white
+				opacity: 0
+				visibility: hidden
+				z-index: 10
+			&:hover
+				box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)
+				.brand-img
+					&:before, &:after
+						+transform(translate(0,0))
+					> img
+						+transform(scale3d(1.1,1.1,1.1))
+					.brand-logo
+						opacity: 0
+				figcaption
+				.brand-name
+					+transform(translateY(100%))
+					opacity: 1
+					visibility: visible
+				.brand-des
+					opacity: 1
+					visibility: visible
+
+.brand-intro
+	border-top: 1px solid darken($white,10%)
+	padding-top: 30px
+	.brand-logo
+		margin-bottom: 20px
+		img
+			max-width: 500px
+			max-height: 100px
+			+media-breakpoint-down(lg)
+				max-width: 50%
+				max-height: 50%
+	.content
+		max-height: 200px
+		overflow: hidden
+		margin-bottom: 15px
+		+transition(all,0.5s)
+		+pos(rel,null)
+		&:after
+			content: ''
+			+pos(abs, null 0 0 0)
+			height: 50px
+			background: linear-gradient(color-rgba($white,0),color-rgba($white,1))
+		&.open
+			max-height: 10000px
+			&:after
+				display: none
+	.btn-wrap
+		text-align: center
+	.btn-expand
+		display: inline-block
+		+fs(13rem)
+		border: 1px solid darken($white,10%)
+		padding: 8px 30px
+		color: $main
+		text-transform: uppercase
+		&:after
+			content: '\f107'
+			margin-left: 5px
+			display: inline-block
+		&.active
+			&:after
+				+transform(scaleY(-1))
+		&:hover
+			background: $black
+			color: $white
+			border-color: $black

@@ -1,0 +1,435 @@
+.home-title
+	+fs(28rem)
+	text-transform: uppercase
+	// font-weight: 200
+	margin-bottom: 30px
+	color: $black
+	text-align: center
+	line-height: 1.5
+	+media-breakpoint-down(lg)
+		+fs(24rem)
+	+media-breakpoint-down(md)
+		+fs(20rem)
+	+media-breakpoint-down(sm)
+		+fs(18rem)
+	+media-breakpoint-down(xs)
+		+fs(16rem)
+		// font-weight: 300
+	&:after
+		content: ''
+		display: block
+		width: 140px
+		height: 1px
+		background: $red
+		margin: 10px auto 0
+	&.text-left
+		&:after
+			margin-left: 0
+.home-des
+	color: darken($white,40%)
+	+fs(17rem)
+	width: 60%
+	line-height: 1.3
+	margin: 0 auto 30px
+	+media-breakpoint-down(lg)
+		width: 80%
+	+media-breakpoint-down(md)
+		width: 90%
+	+media-breakpoint-down(sm)
+		width: 100%
+		+fs(16rem)
+.home-brand
+	padding: 20px 0
+	.home-brand-slide
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			z-index: 5
+			+fs(0)
+			opacity: 0.5
+			color: $main
+			&:hover
+				opacity: 1
+			&:before
+				content: ''
+				+fs(28rem)
+		.slick-prev
+			left: -15px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -15px
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -5px
+		.item
+			padding: 0px 5px
+			.brand-logo
+				+flexbox
+				height: 90px
+				justify-content: center
+				align-items: center
+				background: $white
+				border: 1px solid darken($white,10%)
+				img
+					max-width: 60%
+					max-height: 60%
+.home-sale
+	padding: 20px 0 60px
+	+pos(rel,null)
+	background: url(../img/bg/homesale.jpg) left bottom repeat-x
+	&:before
+		content: ''
+		display: block
+		+pos(abs, 0 0 null 0)
+		height: 50%
+		background: linear-gradient(color-rgba($white,1),color-rgba($white,0))
+		z-index: 0
+	.container
+		+pos(rel,null)
+		z-index: 1
+	.home-sale-slide
+		+pos(rel,null)
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			// width: 36px
+			// height: 36px
+			// line-height: 36px
+			text-align: center
+			+bor-rad(50px)
+			color: darken($white,40%)
+			z-index: 5
+			&.slick-disabled
+				opacity: .3
+			&:before
+				content: ''
+				font-family: 'fontawesome'
+				+fs(28rem)
+			&:hover
+				color: $orange
+		.slick-prev
+			left: -30px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -30px
+			&:before
+				content: '\f105'
+		&:before
+			content: ''
+			display: block
+			+pos(abs, 0 null 0 0)
+			width: 1px
+			background: $white
+			z-index: 1
+		.slick-list
+			margin: 0px -5px
+		.item
+			padding: 0px 5px
+.home-product-wrap
+	background: darken($white,4%)
+	padding: 30px 0px
+
+.home-category
+	margin: 60px 0 20px
+	.row
+		margin: 0px -10px
+	.col-12
+		padding: 0px 10px
+	.category
+		display: block
+		+pos(rel,null)
+		+media-breakpoint-down(md)
+			margin-bottom: 20px
+		&:hover
+			margin-top: -5px
+			box-shadow: 0px 15px 30px -10px color-rgba($black,0.3)
+		.cate-img
+			+flexbox
+			justify-content: center
+			align-items: center
+			height: 240px
+			overflow: hidden
+			+pos(rel,null)
+			+media-breakpoint-down(md)
+				height: 220px
+			&:before
+				content: ''
+				+pos(abs, 0 null 0 0)
+				right: 0
+				background: linear-gradient(color-rgba($black,0.2),color-rgba($black,0))
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		figcaption
+			+pos(abs, 0 0 null 0)
+			z-index: 1
+			padding: 25px 20px
+			color: $white
+		.cate-name
+			+fs(20rem)
+			font-weight: 700
+			text-transform: uppercase
+		.cate-des
+			+fs(11rem)
+			line-height: 1.5
+			margin-bottom: 10px
+			text-transform: uppercase
+		.link
+			+bor-rad(5px)
+			border: 1px solid $white
+			color: $white
+			+fs(12rem)
+			padding: 5px 25px
+			display: inline-block
+			+transition(all,0.3s)
+			&:after
+				content: '\f0da'
+				margin-left: 5px
+			&:hover
+				background: $white
+				color: $black
+.home-banner
+	margin-bottom: 60px
+	.row
+		margin: 0px -10px
+	.col-12
+		padding: 0px 10px
+	.bn
+		display: block
+		+transition(all,0.3s)
+		&:hover
+			margin-top: -5px
+			box-shadow: 0px 15px 30px -10px color-rgba($black,0.3)
+		img
+			width: 100%
+.home-newproduct
+	padding: 60px 0
+	background: url(../img/bg/newpr.jpg) center center repeat
+	.home-title
+		color: $white
+	.product-group
+		margin-bottom: 20px
+		+media-breakpoint-down(lg)
+			margin-bottom: 10px
+		.row
+			margin: 0px -5px
+		.col-6, .col-12
+			padding: 0px 5px
+	.col-custom-2
+		width: 40%
+		flex: 0 0 40%
+		+media-breakpoint-down(lg)
+			display: none
+	.col-custom-3
+		width: 60%
+		flex: 0 0 60%
+		+media-breakpoint-down(lg)
+			width: 100%
+			flex: 0 0 100%
+	.product-banner
+		height: 100%
+		display: block
+		border: 1px solid $white
+		&:hover
+			filter: brightness(130%)
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+.home-hotsale
+	padding: 60px 0
+.home-popular
+	padding: 60px 0
+	background: darken($white,5%)
+	.banner-small
+		margin-bottom: 10px
+	.product-list
+		.col-custom
+			margin-bottom: 10px
+.home-promotion-wrap
+	padding: 60px 0
+	background: url(../img/bg/video.jpg) top left repeat
+	.home-title
+		color: $white
+.home-promotion
+	+media-breakpoint-down(md)
+		margin-bottom: 40px
+	.promotion
+		display: block
+		margin-bottom: 10px
+		img
+			width: 100%
+		&:last-child
+			margin-bottom: 0
+.home-video
+	.row
+		margin: 0px -5px
+	.col-6
+		padding: 0px 5px
+	.col-lg-12
+		margin-bottom: 10px
+	.video
+		display: block
+		+pos(rel,null)
+		height: 110px
+		+media-breakpoint-down(lg)
+			height: 90px
+		&.big
+			+media-breakpoint-up(lg)
+				height: 266px
+				&:before
+					background-size: 60px auto
+			+media-breakpoint-up(xl)
+				height: 330px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		&:before
+			content: ''
+			+pos(abs, 0 null 0 0)
+			right: 0
+			background: color-rgba($black,0.2) url(../img/play.png) center center no-repeat
+			background-size: 40px auto
+			z-index: 1
+.home-system-wrap
+	+pos(rel,null)
+	.system-img
+		+pos(abs, 0 50% 0 0)
+		padding-right: 15px
+		+media-breakpoint-down(md)
+			+pos(static,unset)
+			margin-top: 60px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.home-system
+		padding: 60px 0
+		+media-breakpoint-down(md)
+			padding-top: 30px
+		.filter
+			margin-bottom: 40px
+			select
+				+fs(14rem)
+				padding: 8px 20px
+				+bor-rad(5px)
+				border: 1px solid darken($white,20%)
+		.store-list
+			padding: 10px 10px 0
+			margin-bottom: 20px
+			border: 1px solid darken($white,20%)
+			.slick-prev, .slick-next
+				+pos(abs, 0 0 null null)
+				+transform(translateY(-100%))
+				+fs(0)
+				z-index: 1
+				width: 30px
+				height: 30px
+				line-height: 30px
+				text-align: center
+				background: darken($white,5%)
+				margin-top: -1px
+				&:before
+					content: ''
+					+fs(18rem)
+				&:hover
+					background: darken($white,10%)
+					color: $red
+			.slick-prev
+				right: 32px
+				&:before
+					content: '\f104'
+			.slick-next
+				&:before
+					content: '\f105'
+			.slick-list
+				margin: 0px -10px
+			.item
+				padding: 0px 10px
+				+media-breakpoint-down(lg)
+					.row
+						margin: 0px -10px
+					.col-12
+						padding: 0px 10px
+			.store
+				+fs(14rem)
+				margin-bottom: 10px
+				.name
+					font-weight: 500
+					margin-bottom: 3px
+				.addr
+					+fs(13rem)
+		.btn-wrap
+			+flexbox
+			justify-content: flex-end
+		.btn-viewnearest
+			padding: 8px 30px
+			+bor-rad(5px)
+			background: $red
+			color: $white
+			text-transform: uppercase
+			+media-breakpoint-down(lg)
+				+fs(13rem)
+				font-weight: 300
+			&:hover
+				background: darken($red,10%)
+
+.home-news
+	padding: 60px 0
+	background: url(../img/bg/news.jpg) top left repeat
+	.news-list
+	.news-col
+		+media-breakpoint-down(lg)
+			margin-bottom: 30px
+		figure
+			.news-img
+				display: block
+				img
+					width: 100%
+			figcaption
+				padding: 15px 25px
+				background: $white
+				.news-name
+					font-weight: 500
+					margin-bottom: 10px
+					display: -webkit-box
+					height: 0.9375rem*1.4*2
+					font-size: 0.9375rem
+					line-height: 1.5
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+					a
+						color: $main
+						&:hover
+							color: $red
+				.news-des
+					font-weight: 300
+					color: darken($white,60%)
+					margin-bottom: 10px
+					display: -webkit-box
+					height: 0.75rem*1.5*3
+					font-size: 0.75rem
+					line-height: 1.5
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+				.link
+					color: $red
+					+fs(13rem)
+					&:after
+						content: '\e87a'
+						font-family: 'linearicons-free'
+						margin-left: 5px
+						+transition(all,0.3s)
+					&:hover
+						&:after
+							margin-left: 15px

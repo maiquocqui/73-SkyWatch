@@ -1,0 +1,18 @@
+.topbar
+	background: $pink
+	padding: 7px 0
+.topbar-category
+	text-align: center
+	ul 
+		li 
+			display: inline-block
+			+fs(13rem)
+			line-height: 26px
+			padding: 0px 10px
+			+bor-rad(50px)
+			a 
+				color: $white
+			&:hover
+				background: color-rgba($black,0.1)
+			&.active
+				background: $blue

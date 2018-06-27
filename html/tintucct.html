@@ -1,0 +1,790 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="theme-color" content="#000">
+    <title>Sky Watch</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/addons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endinject -->
+  </head>
+  <body class="productpage">
+    <div class="fullpage">
+      <header>
+        <section class="headertop clearfix d-none d-xl-block">
+          <div class="container">
+            <nav class="top-menu">
+              <ul>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Hệ thống cửa hàng</a></li>
+                <li><a href="#">Hỗ trợ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Bảo hành</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </nav>
+            <div class="colright clearfix">
+              <div class="login">
+                <ul>
+                  <li><a href="#">Đăng ký</a></li>
+                  <li><a href="#">Đăng nhập</a></li>
+                </ul>
+              </div>
+              <div class="language">
+                <div class="dropdown"><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                    <div class="icon"><img src="img/vn.png" alt=""></div>
+                    <div class="text">Tiếng Việt</div></a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="group">
+                      <div class="group-title">Tất cả ngôn ngữ</div>
+                      <ul>
+                        <li class="active"><a href="#">
+                            <div class="icon"><img src="img/vn.png" alt=""></div>
+                            <div class="text">Tiếng Việt</div></a></li>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/en.png" alt=""></div>
+                            <div class="text">Tiếng Anh</div></a></li>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/jp.png" alt=""></div>
+                            <div class="text">Tiếng Nhật</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="headermain clearfix">
+          <div class="container">
+            <div class="btn-showmenu d-xl-none"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="sitelogo"><a href="#" class="logo1 d-none d-xl-block"><img src="img/logo.png" alt=""></a><a href="#" class="logo2 d-block d-xl-none"><img src="img/logo2.png" alt=""></a></div>
+            <div class="search">
+              <div class="searchwrap">
+                <div class="searchbox">
+                  <input placeholder="Nhập từ khóa cần tìm..."><a href="javascript:;" data-fancybox="advancesearch" data-src="#advance-search" class="btn-advance">Nâng cao</a>
+                  <div id="advance-search" class="advance-search">
+                    <div class="module-title">Tìm kiếm nâng cao</div>
+                    <div class="row">
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Hãng sản xuất</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Loại máy</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Chất liệu vỏ</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Dòng sản phẩm</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Giới tính</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Chất liệu dây</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Chọn mức giá</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Đường kính mặt</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Mặt kính</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Chọn phong cách</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Kiểu dáng</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-6 col-sm-6 col-md-4">
+                        <select>
+                          <option>Màu mặt</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-12 col-sm-12 col-md-8">
+                        <input placeholder="Nhập từ khóa tím kiếm...">
+                      </div>
+                      <div class="form-group col-12 col-sm-6 col-md-4">
+                        <button class="btn-search">Tìm kiếm sản phẩm</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="searchbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="login-dropdown d-flex d-xl-none">
+              <div class="dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                  <div class="login">
+                    <ul>
+                      <li><a href="#!">Đăng nhập</a></li>
+                      <li><a href="#!">Đăng ký</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sitefeature d-none d-xl-flex">
+              <div class="feature">
+                <div class="icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                <div class="name">Miễn phí giao hàng</div>
+              </div>
+              <div class="feature">
+                <div class="icon"><i class="fa fa-cubes" aria-hidden="true"></i></div>
+                <div class="name">Nhận & xem hàng tại nhà</div>
+              </div>
+              <div class="feature">
+                <div class="icon"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></div>
+                <div class="name">Bảo hành lên đến 7 năm</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="headermenu clearfix">
+          <div class="container">
+            <nav class="mobile-menu d-block d-xl-none">
+              <div class="btn-closemenu">✕</div>
+              <div class="social"><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#!"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+              <div class="language"><a href="#!" class="active">Tiếng Việt</a><a href="#!">English</a></div>
+              <div class="menu-wrap">
+                <ul class="menulink">
+                  <li class="active"><a href="#!">Trang chủ</a></li>
+                  <li><a href="#!">Sản phẩm</a></li>
+                  <li><a href="#!">Giới thiệu</a></li>
+                  <li><a href="#!">Hệ thống cửa hàng</a></li>
+                  <li><a href="#!">Hỗ trợ</a></li>
+                  <li><a href="#!">Tin tức</a></li>
+                  <li><a href="#!">Tuyển dụng</a></li>
+                  <li><a href="#!">Bảo hành</a></li>
+                  <li><a href="#!">Liên hệ</a></li>
+                </ul>
+              </div>
+            </nav>
+            <nav class="menu clearfix d-none d-xl-block">
+              <ul class="menulink clearfix">
+                <li class="active"><a href="#">Trang chủ</a></li>
+                <li class="hasmega"><a href="#">Thương hiệu</a>
+                  <div class="mega clearfix">
+                    <div class="row">
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Hãng bán chạy</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Casio</a>
+                              <div class="mega-sub">
+                                <div class="megasub-wrap">
+                                  <div class="title">Sản phẩm hot</div>
+                                  <ul class="sublink">
+                                    <li><a href="#!">Baby - G</a></li>
+                                    <li><a href="#!">Edifice</a></li>
+                                    <li><a href="#!">G-Shock</a></li>
+                                    <li><a href="#!">LTP</a></li>
+                                    <li><a href="#!">MTP</a></li>
+                                    <li><a href="#!">Sheen</a></li>
+                                  </ul>
+                                </div>
+                                <div class="megasub-img"><a href="#!"><img src="img/banner/m1.jpg" alt=""></a></div>
+                              </div>
+                            </li>
+                            <li> <a href="#!">Olympia</a></li>
+                            <li> <a href="#!">Ogival</a></li>
+                            <li> <a href="#!">skagen</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Khuyên dùng</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Casio</a></li>
+                            <li> <a href="#!">Olympia</a></li>
+                            <li> <a href="#!">Ogival</a></li>
+                            <li> <a href="#!">skagen</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Hãng thụy sĩ</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Casio</a></li>
+                            <li> <a href="#!">Olympia</a></li>
+                            <li> <a href="#!">Ogival</a></li>
+                            <li> <a href="#!">skagen</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Hãng khác</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Casio</a></li>
+                            <li> <a href="#!">Olympia</a></li>
+                            <li> <a href="#!">Ogival</a></li>
+                            <li> <a href="#!">skagen</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="hasmega"><a href="#">Đồng hồ nam</a>
+                  <div class="mega clearfix">
+                    <div class="row">
+                      <div class="col-12 col-lg-3 col-custom">
+                        <div class="mega-col">
+                          <div class="title">Thương hiệu</div>
+                          <ul class="megalink filter">
+                            <li> <a href="#!">Casio</a></li>
+                            <li> <a href="#!">Olympia</a></li>
+                            <li> <a href="#!">Ogival</a></li>
+                            <li> <a href="#!">Skagen</a></li>
+                            <li> <a href="#!">Citizen</a></li>
+                            <li> <a href="#!">Casio</a></li>
+                            <li> <a href="#!">Rolax</a></li>
+                            <li> <a href="#!">Coca</a></li>
+                            <li> <a href="#!">Pepsi</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 col-custom">
+                        <div class="mega-col">
+                          <div class="title">Chất liệu</div>
+                          <ul class="megalink filter">
+                            <li> <a href="#!">Dây da</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                            <li> <a href="#!">Thép không gỉ 316L</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 col-custom">
+                        <div class="mega-col">
+                          <div class="title">Giá sản phẩm</div>
+                          <ul class="megalink filter">
+                            <li> <a href="#!">Dưới 3tr</a></li>
+                            <li> <a href="#!">Từ 3tr đến 5tr</a></li>
+                            <li> <a href="#!">Từ 5tr đến 8tr</a></li>
+                            <li> <a href="#!">Từ 8tr đến 11tr</a></li>
+                            <li> <a href="#!">Từ 11tr đến 13tr</a></li>
+                            <li> <a href="#!">Từ 13tr đến 17tr</a></li>
+                            <li> <a href="#!">Từ 17tr đến 20tr</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 col-custom2">
+                        <div class="mega-sale">
+                          <div class="title">Khuyến mãi hot</div><a href="#!" class="img"><img src="img/banner/m2.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">Đồng hồ nữ</a></li>
+                <li><a href="#">Đồng hồ đôi</a></li>
+                <li class="hasmega"><a href="#">Sản phẩm khác</a>
+                  <div class="mega clearfix">
+                    <div class="row">
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Phụ kiện</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Hộp lên dây cót tự động</a></li>
+                            <li> <a href="#!">Dây đồng hồ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Sản phẩm khác 1</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Sản phẩm 01</a></li>
+                            <li> <a href="#!">Sản phẩm 02</a></li>
+                            <li> <a href="#!">Sản phẩm 03</a></li>
+                            <li> <a href="#!">Sản phẩm 04</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Sản phẩm khác 2</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Sản phẩm 01</a></li>
+                            <li> <a href="#!">Sản phẩm 02</a></li>
+                            <li> <a href="#!">Sản phẩm 03</a></li>
+                            <li> <a href="#!">Sản phẩm 04</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <div class="mega-col">
+                          <div class="title">Sản phẩm khác 3</div>
+                          <ul class="megalink">
+                            <li> <a href="#!">Sản phẩm 01</a></li>
+                            <li> <a href="#!">Sản phẩm 02</a></li>
+                            <li> <a href="#!">Sản phẩm 03</a></li>
+                            <li> <a href="#!">Sản phẩm 04</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">Tin khuyến mãi</a></li>
+              </ul>
+            </nav>
+            <div class="cart">
+              <div class="cart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <div class="cart-amount"> <strong>2 </strong>Sản phẩm</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+        <section class="breadcrumb-wrap clearfix">
+          <div class="container">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books"><span itemprop="name">Trang chủ</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books/sciencefiction"><span itemprop="name">Sản phẩm</span></a>
+                <meta itemprop="position" content="2">
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books/sciencefiction"><span itemprop="name">Đồng hồ nam</span></a>
+                <meta itemprop="position" content="3">
+              </li>
+            </ol>
+          </div>
+        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9 col-xl-9">
+              <section class="news-page clearfix">
+                <h2 class="page-title">Apple vừa giới thiệu Apple Watch Series 3: thiết kế không đổi, có thể cắm SIM và chứa được hơn 40 triệu bài hát</h2>
+                <div class="news-info">
+                  <time>19/05/2017</time>
+                </div>
+                <div class="news-content content">
+                  <p> <strong>Chiếc đồng hồ thế hệ tiếp theo của Apple được tích hợp thêm rất nhiều tính năng hữu ích hơn cho người dùng.</strong></p>
+                  <p>Như vậy, Apple đã vén màn mở đầu sự kiện ngày hôm nay với sự xuất hiện của Apple Watch Series 3. Điểm đặc biệt của dòng sản phẩm thế hệ thứ 3 này là được tích hợp mạng LTE/4G, điều này giúp người dùng có thể stream nhạc và gọi điện thoại mà không cần phải kết nối với iPhone.</p>
+                  <figure><img src="http://kenh14cdn.com/thumb_w/620/2017/vpavic-120916-1220-0308-0-0-1505237755111.jpg" alt=""></figure>
+                  <p>Ngoài ra, người dùng còn có thể lưu trữ lên đến 40 triệu bài hát trên chiếc đồng hồ thế hệ mới này và nghe nhạc thông qua tai nghe không dây (Apple Watch đời trước có 8 GB bộ nhớ trong và chỉ chừa 2 GB để người dùng lưu nhạc mà thôi). Apple Watch Series 3 còn có hệ thống định vị GPS tích hợp, vì vậy người dùng không cần nhờ đến điện thoại để đo đạc chính xác quãng đường đã chạy bộ nữa.</p>
+                  <figure><img src="http://kenh14cdn.com/thumb_w/620/2017/apple-iphone-2017-20170912-10550-1505239086672.JPG" alt=""></figure>
+                  <p>Tất nhiên, với việc "vác" hẳn một số tính năng kết nối từ điện thoại sang đồng hồ (trong đó có cả kết nối mạng LTE) đã giúp Apple Watch Series 3 trở thành thiết bị độc lập hơn, ít phải phụ thuộc vào điện thoại hơn trước.</p>
+                  <figure><img src="http://kenh14cdn.com/thumb_w/620/2017/apple-iphone-2017-20170912-10559-1505239100058.JPG" alt=""></figure>
+                  <p>Apple không phải là hãng đầu tiên có đồng hồ tích hợp LTE, trên thực tế trước đây đã có Gear S3 của Samsung với kết nối GPS và LTE, rồi cả LG Watch Urbane phiên bản 2. Nhưng nhìn vào tổng thể, cả 2 sản phẩm đều vướng phải vấn đề về thiết kế lẫn thời lượng pin khi tích hợp quá nhiều công nghệ vào một sản phẩm đeo trên cổ tay.</p>
+                  <figure><img src="http://kenh14cdn.com/thumb_w/620/2017/apple-iphone-2017-20170912-10639-1505239133306.JPG" alt=""></figure>
+                  <figure><img src="http://kenh14cdn.com/thumb_w/620/2017/apple-iphone-2017-20170912-10670-1505239147474.JPG" alt=""></figure>
+                </div>
+                <div class="share"><img src="img/share.jpg" alt=""></div>
+                <div class="other-news">
+                  <div class="small-title">Tin tức liên quan</div>
+                  <div class="post-list"><a href="#" class="post">Apple vừa giới thiệu Apple Watch Series 3: thiết kế không đổi, có thể cắm SIM và chứa được hơn 40 triệu bài hát</a><a href="#" class="post">Apple vừa giới thiệu Apple Watch Series 3: thiết kế không đổi, có thể cắm SIM và chứa được hơn 40 triệu bài hát</a><a href="#" class="post">Apple vừa giới thiệu Apple Watch Series 3: thiết kế không đổi, có thể cắm SIM và chứa được hơn 40 triệu bài hát</a><a href="#" class="post">Apple vừa giới thiệu Apple Watch Series 3: thiết kế không đổi, có thể cắm SIM và chứa được hơn 40 triệu bài hát</a><a href="#" class="post">Apple vừa giới thiệu Apple Watch Series 3: thiết kế không đổi, có thể cắm SIM và chứa được hơn 40 triệu bài hát</a></div>
+                </div>
+              </section>
+            </div>
+            <div class="col-12 col-lg-3 col-xl-3">
+              <nav class="sidebar-category clearfix">
+                <div class="small-title">Danh mục tin tức</div>
+                <ul class="sidebar-link">
+                  <li class="active"><a href="#">Tin thị trường</a></li>
+                  <li><a href="#">Tin công nghệ</a></li>
+                  <li><a href="#">Tin khuyến mãi</a></li>
+                </ul>
+              </nav>
+              <section class="lastest-news clearfix">
+                <div class="small-title">Tin mới nhất</div>
+                <div class="post-list">
+                  <div class="post big">
+                    <figure><a href="#" class="post-img"><img src="img/news/1.jpg" alt=""></a>
+                      <figcaption>
+                        <h3 class="post-name"><a href="#">15 năm chính thức có mặt ở Việt Nam, Sky Watch giảm giá 50%</a></h3>
+                        <time>12/07/2017</time>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="post">
+                    <figure>
+                      <figcaption>
+                        <h3 class="post-name"><a href="#">15 năm chính thức có mặt ở Việt Nam, Sky Watch giảm giá 50%</a></h3>
+                        <time>12/07/2017</time>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="post">
+                    <figure>
+                      <figcaption>
+                        <h3 class="post-name"><a href="#">15 năm chính thức có mặt ở Việt Nam, Sky Watch giảm giá 50%</a></h3>
+                        <time>12/07/2017</time>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="post">
+                    <figure>
+                      <figcaption>
+                        <h3 class="post-name"><a href="#">15 năm chính thức có mặt ở Việt Nam, Sky Watch giảm giá 50%</a></h3>
+                        <time>12/07/2017</time>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="post">
+                    <figure>
+                      <figcaption>
+                        <h3 class="post-name"><a href="#">15 năm chính thức có mặt ở Việt Nam, Sky Watch giảm giá 50%</a></h3>
+                        <time>12/07/2017</time>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="post">
+                    <figure>
+                      <figcaption>
+                        <h3 class="post-name"><a href="#">15 năm chính thức có mặt ở Việt Nam, Sky Watch giảm giá 50%</a></h3>
+                        <time>12/07/2017</time>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <section class="product-other clearfix">
+            <div class="small-title wow fadeInUp">Sản phẩm liên quan</div>
+            <div class="other-slide product-list">
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn">
+                    <div class="promotion new">NEW</div>
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/1.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn">
+                    <div class="promotion hot">HOT</div>
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/2.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn">
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/3.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn"> 
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/4.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn"> 
+                    <div class="promotion new">NEW</div>
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/5.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn"> 
+                    <div class="promotion hot">HOT</div>
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/6.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-col">
+                  <figure class="wow zoomIn"> 
+                    <div class="promotion sale">-10%</div>
+                    <div class="img-wrap"><a href="#" class="product-img"><img src="img/product/7.png" alt=""></a></div>
+                    <figcaption>
+                      <div class="product-brand">CASIO</div>
+                      <h3 class="product-name"><a href="#">SKAGEN SKW6234</a></h3>
+                      <div class="product-status">Tình trạng: Sẵn hàng</div>
+                      <div class="product-view">Lượt xem: 1164</div>
+                      <div class="product-price clearfix">
+                        <div class="new">5.312.000 đ</div>
+                        <div class="old">6.650.000 đ</div>
+                      </div>
+                      <div class="btn-productwrap"><a href="#" class="btn-view">Chi tiết</a></div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-contact">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="contact-col">
+                  <figure>
+                    <div class="icon"><img src="img/phone.png" alt=""></div>
+                    <figcaption>
+                      <div class="title">Gọi mua hàng (08:30-21:30)</div>
+                      <div class="des">Tất cả các ngày trong tuần</div>
+                    </figcaption>
+                  </figure>
+                  <div class="hotline"><a href="tel:1900636797">1900.636.797</a></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="contact-col">
+                  <figure>
+                    <div class="icon"><img src="img/chat.png" alt=""></div>
+                    <figcaption>
+                      <div class="title">Góp ý, khiếu nại (08:30-21:30)</div>
+                      <div class="des">Các ngày trong tuần (trừ ngày lễ)</div>
+                    </figcaption>
+                  </figure>
+                  <div class="hotline"><a href="tel:0979634373">0979.634.373</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-sitemap">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="footer-col">
+                  <div class="title text-center">SkyWatch là ai?</div>
+                  <nav class="footerlink text-center">
+                    <ul>
+                      <li><a href="#">Giới thiệu</a></li>
+                      <li><a href="#">Triết lý kinh doanh</a></li>
+                      <li><a href="#">Hệ thống cửa hàng</a></li>
+                      <li><a href="#">Tại sao chọn SkyWatch?</a></li>
+                      <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="footer-col">
+                  <div class="title text-center">Tin tức & Sự kiện</div>
+                  <nav class="footerlink text-center">
+                    <ul>
+                      <li><a href="#">Giấy chứng nhận</a></li>
+                      <li><a href="#">Tin khuyến mãi</a></li>
+                      <li><a href="#">Đánh giá đồng hồ</a></li>
+                      <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="footer-col">
+                  <div class="title text-center">Tư vấn & Sản phẩm</div>
+                  <nav class="footerlink text-center">
+                    <ul>
+                      <li><a href="#">Dịch vụ bảo hành & sửa chữa</a></li>
+                      <li><a href="#">Thương hiệu đồng hồ</a></li>
+                      <li><a href="#">Hỏi đáp</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-support clearfix">
+            <div class="support-col"><a href="#">
+                <div class="icon"><img src="img/icon/h1.png" alt=""></div>
+                <div class="text">Cam kết chính hãng</div></a></div>
+            <div class="support-col"><a href="#">
+                <div class="icon"><img src="img/icon/h2.png" alt=""></div>
+                <div class="text">Bảo hành lên đến 7 năm</div></a></div>
+            <div class="support-col"><a href="#">
+                <div class="icon"><img src="img/icon/h3.png" alt=""></div>
+                <div class="text">Hậu mãi tuyệt vời</div></a></div>
+            <div class="support-col"><a href="#">
+                <div class="icon"><img src="img/icon/h4.png" alt=""></div>
+                <div class="text">Đổi trả 1 đổi 1 trong 7 - 15 ngày</div></a></div>
+            <div class="support-col"><a href="#">
+                <div class="icon"><img src="img/icon/h5.png" alt=""></div>
+                <div class="text">Giao hàng toàn quốc nhanh chóng</div></a></div>
+          </div>
+          <div class="footer-main clearfix">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-col">
+                  <div class="title">Thông tin liên hệ</div>
+                  <div class="contact-info">
+                    <p>Quyền Sở Hữu & Bản Quyền Website Này Thuộc : SKYWATCH</p>
+                    <ul>
+                      <li><i class="fa fa-home" aria-hidden="true"></i> 830/11A2 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM</li>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:083 9797 369">083 9797 369</a></li>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:1900.636.797">1900 636 797</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-col">
+                  <div class="title">Tin nổi bật</div>
+                  <nav class="footerlink">
+                    <ul>
+                      <li><a href="#">Nên mua đồng hồ Thuỵ Sĩ, Nhật Bản hay thời trang?</a></li>
+                      <li><a href="#">Skywatch nơi xây dựng sự “tin tưởng”</a></li>
+                      <li><a href="#">Tưng bừng khai trương shop thứ 45 của Skywatch tại Vincom PLAZA Hà Tĩnh</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-col">
+                  <div class="title">Đăng ký nhận bản tin</div>
+                  <div class="subscribe">
+                    <div class="module-title">Nhập email để nhận thông tin mới nhất từ Skywatch</div>
+                    <div class="subscribefrm">
+                      <input placeholder="Nhập email...">
+                      <button class="subscribebutton">Đăng ký</button>
+                    </div>
+                  </div>
+                  <div class="footer-icon"><a href="#"><img src="img/bct.png" alt=""></a><a href="#"><img src="img/norton.png" alt=""></a></div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-col">
+                  <div class="title">Theo dõi chúng tôi</div>
+                  <div class="fanpage"><img src="img/fanpage.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="footer-nav"><a href="#">Hướng dẫn chọn đồng hồ</a><a href="#">Hướng dẫn mua hàng online</a><a href="#">Chính sách khách hàng thân thiết</a><a href="#">Chính sách đổi trả</a><a href="#">Thanh toán giao nhận</a></nav>
+          <div class="footer-bottom clearfix">
+            <div class="copyright">© 2017 Skywatch. All Right Reserved.</div>
+          </div>
+        </div>
+      </footer>
+      <div class="up"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <!-- inject:js -->
+    <script src="js/addons.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endinject -->
+  </body>
+</html></html>

@@ -1,0 +1,59 @@
+.faqlist
+	.faq
+		// +bor-rad(5px)
+		border: 1px solid darken($white,10%)
+		margin-bottom: 15px
+		// +bor-rad(5px)
+		overflow: hidden
+		&.active
+			.faqtitle
+				font-weight: 500
+		.faqtitle
+			// font-weight: 500
+			color: $main
+			padding: 15px 15px 15px 40px
+			+pos(rel,null)
+			cursor: pointer
+			&:hover
+				color: $gray
+			&:before 
+				content: '\f059'
+				font-family: 'fontawesome'
+				margin-right: 10px
+				color: $red
+				+pos(abs, 15px null null 15px)
+			&:after
+				content: '\f107'
+				font-family: 'fontawesome'
+				+pos(abs, 12px 15px null null)
+				+fs(18rem)
+		.faqcontent
+			display: none
+			border-top: 1px solid darken($white,10%)
+			padding: 15px 15px 0 40px
+
+
+.newfaq
+	border: 1px solid darken($white,10%)
+	padding: 15px
+	margin-bottom: 30px
+	// display: flex
+	// flex-wrap: wrap
+	.module-title
+		width: 100%
+		font-weight: 500
+		color: $main
+		padding: 0 15px 15px
+		+pos(rel,null)
+		cursor: pointer
+		border-bottom: 1px solid darken($white,10%)
+		margin: 0px -15px
+		margin-bottom: 15px
+	.form-group
+		width: 50%
+		padding: 0px 10px
+		input
+			width: 100%
+			padding: 10px 15px
+			border: 1px solid darken($white,10%)
+	

@@ -1,0 +1,23 @@
+
+.sidebar-category
+	margin: 40px 0px
+	&.news
+		// margin: 30px 0
+	ul 
+		background: darken($white,5%)
+		li
+			border-bottom: 1px solid $white
+			&:last-child
+				border-bottom: none
+			a
+				display: block
+				padding: 9px 20px
+				color: $main
+				+fs(14rem)
+				&:hover
+					background: color-rgba($black,0.05)
+					color: $red
+			&.active
+				a
+					color: $red
+					background: color-rgba($black,0.05)
